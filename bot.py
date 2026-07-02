@@ -6,7 +6,9 @@ from aiogram.filters import CommandStart, Command
 from keep_alive import keep_alive
 
 # === КОНФИГУРАЦИЯ ===
-BOT_TOKEN = "8857782204:AAGAKWIN9tEBhmITiFuI3cnoWg41O6UZe4I"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+if not BOT_TOKEN:
+    raise RuntimeError("BOT_TOKEN secret is not set. Add it in Replit Secrets before starting the bot.")
 MINI_APP_URL = "https://777ernest888-oss.github.io/demo-miniapp-realty/"
 REGISTER_URL = "https://777ernest888-oss.github.io/demo-miniapp-realty/register.html"
 
