@@ -9,8 +9,8 @@ from keep_alive import keep_alive
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 if not BOT_TOKEN:
     raise RuntimeError("BOT_TOKEN secret is not set. Add it in Replit Secrets before starting the bot.")
-MINI_APP_URL = "https://777ernest888-oss.github.io/demo-miniapp-realty/"
-REGISTER_URL = "https://777ernest888-oss.github.io/demo-miniapp-realty/register.html"
+MINI_APP_URL = "https://777ernest888-oss.github.io/demo-miniapp-realty/?agent=23062026-001"
+REGISTER_URL = "https://777ernest888-oss.github.io/demo-miniapp-realty/register.html?agent=23062026-001"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 router = Router()
